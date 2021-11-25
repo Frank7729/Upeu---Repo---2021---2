@@ -1339,12 +1339,12 @@ public class Prueba extends javax.swing.JFrame {
     }//GEN-LAST:event_TableVentasMouseClicked
 
     private void btnPdfVentasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPdfVentasActionPerformed
-        if (txtIdVenta.getText().equals("")) {
-            JOptionPane.showMessageDialog(null, "Selecciona una fila");
-        } else {
-            v = Vdao.BuscarVenta(Integer.parseInt(txtIdVenta.getText()));
-            Vdao.pdfV(v.getId(), v.getCliente(), v.getTotal(), v.getVendedor());
-        }
+//        if (txtIdVenta.getText().equals("")) {
+//            JOptionPane.showMessageDialog(null, "Selecciona una fila");
+//        } else {
+//            v = Vdao.BuscarVenta(Integer.parseInt(txtIdVenta.getText()));
+//            Vdao.pdfV(v.getId(), v.getCliente(), v.getTotal(), v.getVendedor());
+//        }
     }//GEN-LAST:event_btnPdfVentasActionPerformed
 
     private void btnNuevaVentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevaVentaActionPerformed
@@ -1885,8 +1885,8 @@ public class Prueba extends javax.swing.JFrame {
             Dv.setId(id);
             Vdao.RegistrarDetalle(Dv);
         }
-        int cliente = Integer.parseInt(txtIdCV.getText());
-        Vdao.pdfV(id, cliente, Totalpagar, LabelVendedor.getText());
+//        int cliente = Integer.parseInt(txtIdCV.getText());
+//        Vdao.TableVentas(id, cliente, Totalpagar, LabelVendedor.getText());
     }
 
     private void ActualizarStock() {
